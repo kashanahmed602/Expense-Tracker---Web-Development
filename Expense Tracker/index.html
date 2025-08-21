@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+
+    <!-- Budget Info -->
+    <div class="budget-info">
+      <p>Total Budget: <span id="total-budget">20000</span></p>
+      <p>Total Spent: <span id="total-spent">0</span></p>
+      <p>Remaining: <span id="remaining">0</span></p>
+    </div>
+
+    <!-- Add Expense Form -->
+    <form class="expense-form">
+      <input type="text" id="title" placeholder="Expense Title" required>
+      <input type="number" id="amount" placeholder="Amount" required>
+      <input type="date" id="date" required>
+      <select id="category">
+        <option value="grocery">Grocery</option>
+        <option value="travel">Travel</option>
+        <option value="bills">Bills</option>
+        <option value="others">Others</option>
+      </select>
+      <button type="submit">Add Expense</button>
+    </form>
+
+    <!-- Filter -->
+    <div class="filter">
+      <label for="filterCategory">Filter by Category:</label>
+      <select id="filterCategory">
+        <option value="all">All</option>
+        <option value="grocery">Grocery</option>
+        <option value="travel">Travel</option>
+        <option value="bills">Bills</option>
+        <option value="others">Others</option>
+      </select>
+    </div>
+
+    <!-- Expense List -->
+     <div class="expense-list">
+    <!-- <div class="expense-card">
+   <div class="expense-info">
+    <span class="expense-title">Grocery</span>
+    <span class="expense-category">Category: Food</span>
+    <span class="expense-date">Date: 2025-07-28</span>
+  </div>
+  <div class="expense-amount">
+    $120
+  </div> 
+</div> -->
+</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

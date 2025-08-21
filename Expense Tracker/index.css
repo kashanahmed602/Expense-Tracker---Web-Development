@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Budget Info */
+.budget-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Expense Form */
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.expense-form input,
+.expense-form select,
+.expense-form button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.expense-form button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.expense-form button:hover {
+  background-color: #218838;
+}
+
+/* Filter */
+.filter {
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.filter select {
+  padding: 8px;
+}
+
+/* Expense List */
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Expense Card */
+.expense-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.expense-category {
+  font-size: 12px;
+  color: #555;
+}
+
+.expense-amount {
+  font-size: 16px;
+  color: #e63946;
+  font-weight: bold;
+}
+.expense-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: transform 0.2s ease;
+}
+
+.expense-card:hover {
+  transform: scale(1.02);
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.expense-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.expense-category,
+.expense-date {
+  font-size: 12px;
+  color: #666;
+}
+
+.expense-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e63946;
+}
